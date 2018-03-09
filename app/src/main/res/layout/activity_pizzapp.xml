@@ -6,45 +6,35 @@
     android:layout_height="match_parent"
     tools:context="pizzapp.pizzapp.PizzappActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="157dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/illustrationNiaise"
                 android:layout_width="wrap_content"
-                android:layout_height="132dp"
-                app:srcCompat="@drawable/pizzapp" />
+                android:layout_height="290dp"
+                app:srcCompat="@drawable/pizzapp" android:contentDescription="@string/imagedesc" />
 
             <EditText
+                android:id="@+id/odooUserName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:ems="10"
+                android:layout_height="80dp"
                 android:inputType="textPersonName"
-                android:text="Odoo user" />
+                android:text="@string/odoo_user" />
 
             <Spinner
                 android:id="@+id/pizzaChoiceSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="51dp" />
+                android:layout_height="80dp" />
+            <Button
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order" />
         </LinearLayout>
-    <RelativeLayout
-        android:id="@+id/InnerRelativeLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" >
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Order !" />
-    </RelativeLayout>
-    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
